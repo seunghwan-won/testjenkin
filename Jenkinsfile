@@ -5,6 +5,8 @@ node {
         echo '제발ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ'
         echo 'git 이름 이메일 추가'
         echo '21312312312313123'
+        sh 'cd ~/test'
+        sh 'git clone https://github.com/seunghwan-won/testjenkin.git'
     }
     stage('Test') {
         echo '테슽'

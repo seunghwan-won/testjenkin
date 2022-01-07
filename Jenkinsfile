@@ -1,6 +1,7 @@
 node {
     stage('Build') {
-        sh '/이거 뭔데'
+        sh '이거 뭔데'
+        sh 'webhook 등록'
         sh 'cd /home/ubuntu/test'
         sh 'pwd'
         sh 'ls -al'

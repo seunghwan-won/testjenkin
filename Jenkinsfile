@@ -8,6 +8,7 @@ node {
     stage('Test') {
         echo '테슽'
         sh 'ls -al'
+        echo 'git test2'
     }
     stage('Deploy') {
         echo '배포'

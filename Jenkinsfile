@@ -5,9 +5,8 @@ node {
         echo '빌드'
     }
     stage('Test') {
-        sh 'mvn --version'
-        sh ''
         echo '테슽'
+        sh 'ls -al'
     }
     stage('Deploy') {
         echo '배포'

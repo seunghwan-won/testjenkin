@@ -1,7 +1,9 @@
 node {
     stage('Build') {
         sh 'cd /home/ubuntu/test'
-        sh 'git clone https://github.com/seunghwan-won/testjenkin.git'
+        sh 'pwd'
+        sh 'ls -al'
+        //sh 'git clone https://github.com/seunghwan-won/testjenkin.git'
         echo '빌드'
         echo 'git test'
     }

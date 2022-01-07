@@ -3,6 +3,7 @@ node {
         sh 'cd /home/ubuntu/test'
         sh 'git clone https://github.com/seunghwan-won/testjenkin.git'
         echo '빌드'
+        echo 'git test'
     }
     stage('Test') {
         echo '테슽'

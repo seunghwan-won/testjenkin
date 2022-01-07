@@ -1,5 +1,6 @@
 node {
     stage('Build') {
+        sh '/이거 뭔데'
         sh 'cd /home/ubuntu/test'
         sh 'pwd'
         sh 'ls -al'

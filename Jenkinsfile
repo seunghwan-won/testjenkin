@@ -2,6 +2,7 @@ node {
     stage('Build') {
         sh 'cd /home/ubuntu/test'
         sh 'pwd'
+        echo '제발ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ'
     }
     stage('Test') {
         echo '테슽'

@@ -4,7 +4,7 @@ node {
         sh 'pwd'
         sh 'ls -al'
         sh 'git clone https://github.com/seunghwan-won/testjenkin.git'
-        echo '빌드'
+        echo '빌드22222'
         echo 'git test'
     }
     stage('Test') {

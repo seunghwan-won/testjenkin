@@ -1,15 +1,13 @@
 node {
     stage('Build') {
-        sh 'cd /home/ubuntu/test'
-        sh 'pwd'
-        echo '제발ㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹㄹ'
-        echo 'git 이름 이메일 추가'
-        echo '21312312312313123'
-        sh 'cd ~/test'
-        sh 'git clone https://github.com/seunghwan-won/testjenkin.git'
+        echo '빌드'
+        sh ```
+            pwd
+            li -al
+        ```
     }
     stage('Test') {
-        echo '테슽'
+        echo '테스트'
         sh 'pwd'
     }
     stage('Deploy') {

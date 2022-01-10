@@ -6,6 +6,9 @@ node {
             ls -al
             git clone https://github.com/seunghwan-won/testjenkin.git
             ls -al
+            cd testjenkin/
+            ls -al
+            ./gradlew clean build
          '''
     }
     stage('Test') {

@@ -3,7 +3,7 @@ node {
         echo '빌드'
          sh(
             '''\
-            pwd
+            pwd \
             li -al
             '''
          )

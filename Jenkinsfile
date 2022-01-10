@@ -5,7 +5,7 @@ node {
             pwd
             ls -al
             # 디렉토리 존재 유무 확인
-            if [ ! -d "/var/lib/jenkins/workspace/jenkins_pipeline/testjenkin" ];then
+            if [ -d "/var/lib/jenkins/workspace/jenkins_pipeline/testjenkin" ];then
                 cd /var/lib/jenkins/workspace/jenkins_pipeline/testjenkin;
                 git pull;
             else

@@ -1,12 +1,8 @@
 node {
     stage('Build') {
         echo '빌드'
-         sh(
-            '''\
-            pwd \
-            li -al
-            '''
-         )
+         sh 'pwd'
+         sh 'li -al'
     }
     stage('Test') {
         echo '테스트'

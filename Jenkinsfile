@@ -13,6 +13,7 @@ node {
                 git clone https://github.com/seunghwan-won/testjenkin.git;
                 cd testjenkin;
             fi
+            sudo chmod +x ./gradlew
             ls -al
             sudo ./gradlew clean build
          '''

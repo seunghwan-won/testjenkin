@@ -2,8 +2,8 @@ node {
     stage('Build') {
         echo '빌드'
          sh '''\
-            pwd
-            ls -al
+            pwd;
+            ls -al;
             # 디렉토리 존재 유무 확인
             if [ -d "/var/lib/jenkins/workspace/jenkins_pipeline/testjenkin" ];then
                 cd /var/lib/jenkins/workspace/jenkins_pipeline/testjenkin;
@@ -13,9 +13,12 @@ node {
                 git clone https://github.com/seunghwan-won/testjenkin.git;
                 cd testjenkin;
             fi
-            sudo chmod +x ./gradlew
-            ls -al
-            sudo ./gradlew clean build
+            who;
+            whoami;
+            w;
+            sudo chmod +x ./gradlew;
+            ls -al;
+            sudo ./gradlew clean build;
          '''
     }
     stage('Test') {

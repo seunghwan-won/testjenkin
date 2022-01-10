@@ -8,7 +8,7 @@ node {
             ls -al
             cd testjenkin/
             ls -al
-            ./gradlew clean build
+            sudo ./gradlew clean build
          '''
     }
     stage('Test') {

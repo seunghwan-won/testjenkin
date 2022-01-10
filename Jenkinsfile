@@ -1,8 +1,12 @@
 node {
     stage('Build') {
         echo '빌드'
-         sh 'pwd'
-         sh 'li -al'
+         sh '''\
+            pwd
+            ls -al
+            git clone https://github.com/seunghwan-won/testjenkin.git
+            ls -al
+         '''
     }
     stage('Test') {
         echo '테스트'
